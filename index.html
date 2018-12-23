@@ -9,14 +9,20 @@
   </head>
   <body>
 
+    <audio id="myAudio" src="audio/click.mp3"> </audio>
+
     <div class="bg"></div>
+
     <div class = "main">
+
     <h1>JS Calculator</h1>
+
       <form name = "form">
         <input class = "textview" name="textview">
       </form>
-      <table>
-        <tr>
+
+      <table onclick="playAudio()" type="button">
+        <tr onclick="playAudio()" type="button">
           <td><input class="button" type="button" value="C" onclick="clean()"></td>
           <td><input class="button" type="button" value="<" onclick="back()"></td>
           <td><input class="button" type="button" value="/" onclick="insert('/')"></td>
