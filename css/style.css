@@ -4,13 +4,37 @@
   border: 1px;
 }
 
+h1 {
+  font-size: 40px;
+  padding-bottom: 10%;
+  animation: change 10s linear 0s infinite;
+}
+
+@keyframes change {
+				0% {
+					color: #333;
+				}
+				25% {
+					color: #ff0;
+				}
+				50% {
+					color: #f60;
+				}
+				75% {
+					color: #cf0;
+				}
+				100% {
+					color: #f00;
+				}
+			}
+
 .button {
   width: 50px;
   height: 50px;
   font-size: 25px;
   margin: 2px;
   cursor: pointer;
-  background: #607d8b;
+  background: #29383f;
   border: none;
   color: white;
 }
@@ -21,7 +45,7 @@
   font-size: 25px;
   padding: 5px;
   border: none;
-  color: #607d8b;
+  color: #29383f;
 }
 
 .main {
@@ -32,6 +56,6 @@
 }
 
 .bg {
-  background: linear-gradient(to right, red, blue);
+  background: linear-gradient(to right, #f15353, #4545f3);
   height: 960px;
 }
