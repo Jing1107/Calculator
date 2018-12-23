@@ -18,8 +18,10 @@ const back = function () {
   document.form.textview.value = exp.substring(0,exp.length-1);
 };
 
-var x = document.getElementById("myAudio");
 
-function playAudio() {
-  x.play();
+
+const playAudio = function (){
+  //var x = document.getElementById("myAudio");
+  //x.play();
+  $("#myAudio")[0].play(); // 以上两种都可以起到声效作用
 }
